@@ -1,4 +1,4 @@
-from nginx:alpine
+from nginx:1.25.4-alpine3.18
 
 copy ./docs /usr/share/nginx/html/docs
 copy ./demo /usr/share/nginx/html/demo
