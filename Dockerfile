@@ -4,7 +4,7 @@ COPY . /opt/phpdoc
 WORKDIR /opt/phpdoc
 RUN /usr/bin/composer install --prefer-dist -o --no-interaction --no-dev
 
-FROM php:8.0
+FROM php:8.4.2
 
 # /usr/share/man/man1 needs to be created before installing openjdk-11-jre lest it will fail
 # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=863199#23
